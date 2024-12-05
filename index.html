@@ -9,9 +9,9 @@
             font-family: Arial, sans-serif;
             background-color: #004c54;
             color: #ffffff;
-            line-height: 0.3;
+            line-height: 1;
             margin: 0;
-            padding: 10px;
+            padding: 20px;
         }
         .poem-container {
             max-width: 800px;
@@ -31,7 +31,19 @@
             font-size: 1.2em;
         }
         .line {
-            margin-bottom: 1px;
+            margin-bottom: 5px;
+            word-wrap: break-word;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .poem-container {
+                padding: 15px;
+            }
+            .poem {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
